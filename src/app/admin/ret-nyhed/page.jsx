@@ -1,8 +1,8 @@
 "use client"
 import React, {useEffect, useState, useRef} from 'react'
-import AdminNavbar from '../components/AdminNavbar'
-import ReactQuill from 'react-quill'
-import "react-quill/dist/quill.snow.css";
+// import AdminNavbar from '../components/AdminNavbar'
+// import ReactQuill from 'react-quill'
+// import "react-quill/dist/quill.snow.css";
 import useRequestData from "../../hooks/useRequestData";
 import { useSearchParams } from 'next/navigation'
 import { useUserContext } from '@/app/providers/userProvider';
@@ -15,7 +15,7 @@ import Error from '@/app/components/Error';
 const Page = ({searchParams}) => {
     const id = searchParams.id;
     const {data, error, isLoading, makeRequest} = useRequestData();
-    const quillRef = useRef(null);
+    // const quillRef = useRef(null);
     const [isUpdated, setIsUpdated] = useState(false);
     const router = useRouter();
     const {user} = useUserContext();
@@ -32,9 +32,6 @@ const Page = ({searchParams}) => {
         }
       }, [id]);
 
-      useEffect(() => {
-        require("bootstrap/dist/js/bootstrap.bundle.min.js");
-      }, []);
 
 
       const handleSubmit = (event) => {
@@ -139,11 +136,11 @@ const Page = ({searchParams}) => {
                             <label htmlFor="content" className="form-label">
                               Content:
                             </label>
-                            <ReactQuill
+                            {/* <ReactQuill
                               theme="snow"
                               ref={quillRef}
                               defaultValue={data?.content}
-                            />
+                            /> */}
                           </div>
                         </div>
                         <div className="col-12">
