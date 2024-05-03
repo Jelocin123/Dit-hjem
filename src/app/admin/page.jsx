@@ -11,7 +11,7 @@ import AdminNavbar from './components/AdminNavbar'
 
 
 
-const page = () => {
+const Page = () => {
     const {data, error, makeRequest} = useRequestData();
     const router = useRouter();
     const {user} = useUserContext();
@@ -56,4 +56,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

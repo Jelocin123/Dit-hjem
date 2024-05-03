@@ -8,7 +8,7 @@ import { useRouter } from "next/navigation";
 import "react-quill/dist/quill.snow.css";
 import Error from "@/app/components/Error";
 
-const page = () => {
+const Page = () => {
   const { data, error, makeRequest } = useRequestData();
   const [newNews, setNewNews] = useState({
     title: "",
@@ -151,4 +151,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

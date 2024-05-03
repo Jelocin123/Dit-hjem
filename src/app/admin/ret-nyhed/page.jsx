@@ -11,7 +11,7 @@ import Loader from "../../components/Loader"
 import Image from 'next/image';
 
 
-const page = ({searchParams}) => {
+const Page = ({searchParams}) => {
     const id = searchParams.id;
     const {data, error, isLoading, makeRequest} = useRequestData();
     const quillRef = useRef(null);
@@ -189,4 +189,4 @@ const page = ({searchParams}) => {
   )
 }
 
-export default page
+export default Page

@@ -5,7 +5,7 @@ import { useUserContext } from "../providers/userProvider";
 import { useRouter } from "next/navigation";
 import Navbar from "../components/navbar/Navbar";
 
-const page = () => {
+const Page = () => {
 
   const [loginInfo, setLoginInfo] = useState({});
   const [error, setError] = useState(null);
@@ -69,4 +69,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

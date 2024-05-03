@@ -3,7 +3,7 @@ import AdminNavbar from '../components/AdminNavbar'
 import styles from "./adminNews.module.scss"
 import Link from 'next/link'
 
-const page = () => {
+const Page = () => {
   return (
     <>
     <AdminNavbar/>
@@ -35,4 +35,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

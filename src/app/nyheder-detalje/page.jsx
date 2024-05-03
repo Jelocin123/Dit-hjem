@@ -12,7 +12,7 @@ import Navbar from "../components/navbar/Navbar";
 import { useUserContext } from "../providers/userProvider";
 import Link from "next/link";
 
-const page = ({ searchParams }) => {
+const Page = ({ searchParams }) => {
   const { data, error, makeRequest } = useRequestData();
   const id = searchParams.id;
   const router = useRouter();
@@ -137,4 +137,4 @@ const page = ({ searchParams }) => {
   );
 };
 
-export default page;
+export default Page;

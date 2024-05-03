@@ -11,7 +11,7 @@ import SvgMobil from '../components/svgComponents/SvgMobil'
 import SvgPhone from '../components/svgComponents/SvgPhone'
 import Navbar from '../components/navbar/Navbar'
 
-const page = () => {
+const Page = () => {
   const {data, error, makeRequest} = useRequestData();
   const [loadingInProgress, setLoadingInProgress] = useState(true)
 
@@ -122,4 +122,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page
