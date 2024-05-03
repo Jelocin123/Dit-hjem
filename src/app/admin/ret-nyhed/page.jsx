@@ -32,6 +32,10 @@ const Page = ({searchParams}) => {
         }
       }, [id]);
 
+      useEffect(() => {
+        require("bootstrap/dist/js/bootstrap.bundle.min.js");
+      }, []);
+
 
       const handleSubmit = (event) => {
         event.preventDefault(); 
