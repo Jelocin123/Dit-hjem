@@ -1,0 +1,480 @@
+#navbarContainer {
+
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    ul {
+
+        li {
+
+            a {
+                font-size: calc(1.1rem);
+                color: black;
+                margin-right: calc(1.7rem);
+                text-transform: uppercase;
+                font-weight: 300;
+            }
+
+            a:hover {
+                background-color: #48535f !important;
+    color: white !important;
+    
+            }
+
+        }
+
+    }
+
+    small {
+        color: #48535f;
+        font-size: calc(.9rem);
+        font-weight: 300;
+    }
+
+
+    #contact {
+        position: absolute;
+        top: 0;
+        width: 80%;
+
+        span {
+            color: rgb(146, 146, 245);
+            font-size: calc(1.1rem);
+        }
+        
+
+        p {
+            color: #63707e;
+            text-transform: uppercase;
+            font-size: calc(1.1rem);
+        }
+
+        i {
+            color: #a8b3be;
+            font-size: calc(1.1rem);
+        }
+
+        #firstIcon {
+            color: #909aa5;
+
+        }
+
+
+        #twitterIcon {
+            color: #b4bbc2;
+            font-size: calc(1.1rem);
+            border-right: 1px solid #e3e3e3;
+            border-bottom: 4px solid rgb(137, 137, 239);
+            width: calc(3.2rem);
+            cursor: pointer;
+            position: relative;
+      
+            
+        }
+
+
+        #twitterIcon:hover {
+            color: #fff;
+            transition: .3s ease;
+
+        }
+        #twitterIcon::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 0;
+            background-color: rgb(137, 137, 239);
+            z-index: -1;
+            transition: height 0.3s ease;
+        }
+
+        #twitterIcon:hover::after {
+            height: 100%;
+            
+        }
+
+        
+
+
+        #facebookIcon {
+            border-right: 1px solid #e3e3e3;
+            border-bottom: 4px solid blue;
+            width: calc(3.2rem);
+            cursor: pointer;
+            position: relative;
+
+        }
+
+        #facebookIcon:hover {
+            color: #fff;
+            transition: .3s ease;
+        }
+
+        #facebookIcon::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 0;
+            z-index: -1;
+            background-color: blue;
+            transition: height 0.3s ease;
+        }
+
+        #facebookIcon:hover::after {
+            height: 100%;
+        }
+
+
+
+        
+       
+        
+        
+
+        hr {
+            width: 89%;
+            margin-top: 1px;
+            color: #a8b3be;
+        }
+    }
+
+
+    #navbarBurger {
+        background-color: black;
+        border-radius: 0;
+        
+        #navbarIcon {
+            color: rgb(255, 255, 255);
+            z-index: 5 !important;
+        }
+
+
+        #navbarIconClose {
+        background-color: #e3eaf0;
+        
+        color: #48535f;
+        
+        }
+    }
+
+
+    .zBtn {
+        z-index: 2;
+        
+    }
+
+    #newsletterP {
+        font-size: calc(.95rem) !important;
+        color: #909aa5 !important;
+
+    }
+
+
+
+
+   
+}
+
+@media only screen and (max-width: 600px) {
+    #navbarContainer {
+        padding: 0;
+        
+
+        #navbarNumber {
+            font-size: calc(1rem);
+            z-index: 0;
+
+            svg {
+                width: calc(1rem);
+                
+            }
+        }
+
+        #phoneNumberNone {
+            display: none;
+        }
+
+        #newsletterP {
+            display: none !important;
+
+
+        }
+
+        #twitterIcon {
+            border: 0 !important;
+        }
+
+        #facebookIcon {
+            border: 0 !important;
+        }
+
+
+        #contactRow {
+            display: none;
+        }
+
+        button:focus {
+            box-shadow: none !important;
+        }
+
+        a {
+            font-size: calc(.9rem) !important;
+            color: #48535f !important;
+        }
+
+        hr {
+            opacity: 1;
+            color: white;
+        }
+
+        i {
+            color: #7b8591 !important;
+
+        }
+
+    
+    }
+
+   
+
+}
+
+
+@media only screen and (min-width: 650px) and (max-width: 850px) {
+
+    #navbarContainer {
+        margin: 0;
+        padding: 0;
+        
+
+        #navbarBurger {
+            width: 100vw;
+        }
+
+        #phoneNumberNone {
+            display: none;
+        }
+
+        #newsletterP {
+            display: none !important;
+
+
+        }
+
+        #twitterIcon {
+            border: 0 !important;
+        }
+
+        #facebookIcon {
+            border: 0 !important;
+        }
+
+
+        #contactRow {
+            display: none;
+        }
+
+        button:focus {
+            box-shadow: none !important;
+        }
+
+        i {
+            color: #7b8591 !important;
+
+        }
+
+        img {
+            margin-left: 10px;
+        }
+
+        small {
+            margin-left: 10px;
+        }
+
+        hr {
+            width: 100%;
+            margin-top: 1px;
+            color: #a8b3be;
+        }
+
+        #navbarNumber {
+            font-size: calc(1rem);
+            z-index: 0;
+
+            svg {
+                width: calc(1rem);
+                
+            }
+        }
+
+        
+    }
+
+   
+}
+
+@media only screen and (min-width: 851px) and (max-width: 1050px) {
+
+    #navbarContainer {
+        margin: 0;
+        padding: 0;
+        
+
+        #navbarBurger {
+            width: 100vw;
+        }
+    }
+}
+
+@media only screen and (min-width: 950px) and (max-width: 1050px) {
+  #navbarContainer {
+    ul {
+        margin-left: 75px !important;
+
+        li {
+
+            a {
+                font-size: calc(.9rem) !important;
+                color: black;
+                margin-right: calc(1.5rem);
+                text-transform: uppercase;
+                font-weight: 300;
+            }
+
+            
+
+        }
+
+    }
+
+    small {
+        color: #48535f;
+        font-size: calc(.9rem);
+        font-weight: 300;
+    }
+  }
+    #contact {
+        position: absolute;
+        top: 0;
+        width: 80%;
+
+        span {
+            color: rgb(146, 146, 245);
+            font-size: calc(1.1rem);
+        }
+        
+
+        p {
+            color: #63707e;
+            text-transform: uppercase;
+            font-size: calc(1.1rem);
+        }
+
+        i {
+            color: #a8b3be;
+            font-size: calc(1rem) !important;
+        }
+
+        #firstIcon {
+            color: #63707e;
+
+        }
+
+
+        #twitterIcon {
+            color: #b4bbc2;
+            font-size: .8rem !important;
+            border-right: none !important;
+            border-bottom: 2px solid rgb(137, 137, 239) !important;
+            width: calc(1rem) !important;
+            padding: 0 !important;
+            margin-right: 3px !important;
+        }
+
+        #facebookIcon {
+            border-right: none !important;
+            border-bottom: 2px solid blue !important;
+            font-size: .8rem !important;
+            padding: 0 !important;
+            width: calc(1rem) !important;
+        }
+
+        hr {
+            width: 89%;
+            margin-top: 1px;
+            color: #a8b3be;
+        }
+    }
+
+    #newsletterP {
+        font-size: .8rem !important;
+    }
+
+    #phoneNumberNone {
+        font-size: .9rem !important;
+    }
+
+@media only screen and (min-width: 1051px) and (max-width: 1200px) {
+    #contact {
+        position: absolute;
+        top: 0;
+        width: 80%;
+    
+        span {
+            color: rgb(146, 146, 245);
+            font-size: calc(1.1rem);
+        }
+        
+    
+        p {
+            color: #63707e;
+            text-transform: uppercase;
+            font-size: calc(1.1rem);
+        }
+    
+        i {
+            color: #a8b3be;
+            font-size: calc(1rem) !important;
+        }
+    
+        #firstIcon {
+            color: #63707e;
+    
+        }
+    
+    
+        #twitterIcon {
+            color: #b4bbc2;
+            font-size: .8rem !important;
+            border-right: none !important;
+            border-bottom: 2px solid rgb(137, 137, 239) !important;
+            width: calc(1rem) !important;
+            padding: 1px !important;
+            margin-right: 3px !important;
+        }
+    
+        #facebookIcon {
+            border-right: none !important;
+            border-bottom: 2px solid blue !important;
+            font-size: .8rem !important;
+            padding: 0 !important;
+            width: calc(1rem) !important;
+        }
+    
+        hr {
+            width: 89%;
+            margin-top: 1px;
+            color: #a8b3be;
+        }
+    }
+}
+
+
+    
+
+}
+

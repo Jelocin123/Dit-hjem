@@ -1,0 +1,134 @@
+#newsDetailContainer {
+    background-color: #e3eaf0;
+    .bannerContainer {
+        position: relative;
+        
+        height: 95px; 
+    
+        
+    
+        #banner {
+            object-fit: cover;
+            object-position: top;
+            height: 100%;
+            width: 100%; 
+        }
+
+        .overlayText {
+            position: absolute;
+            top: 25%;
+            color: white;
+            font-size: calc(1.7rem);
+            font-weight: 300;
+            z-index: 1; 
+        }
+    }
+
+
+
+    #loader {
+        height: 596px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .wrapper {
+        position: absolute;
+    }
+
+    #blueOverlay {
+        position: absolute;
+    background-color: #0ac2eb;
+    width: 92.5%;
+    bottom: calc(15.5rem);
+    left: 50%; 
+    transform: translateX(-50%);
+    padding: 20px; 
+    }
+
+    h6 {
+        color: white;
+        font-size: calc(1.5rem);
+        font-weight: 400;
+    }
+
+    h6:hover {
+        color: #595959;
+        transition: .3s ease-in-out;
+    }
+
+    #date {
+        font-size: calc(.8rem);
+        color: rgb(7, 76, 141);
+    }
+
+
+    #imageText {
+        background-color: #fff;
+        height: 275px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start; 
+        
+        padding-left: 60px;
+        padding-right: 60px;
+        color: #595959;
+        font-weight: 300;
+        font-size: calc(.95rem);
+    }
+
+
+    @media only screen and (min-width: 320px) and (max-width: 900px) {
+        #blueOverlay {
+            position: absolute;
+        background-color: #0ac2eb;
+        width: 100%;
+        bottom: calc(18rem);
+        left: 50%; 
+        transform: translateX(-50%);
+        padding: 20px; 
+        }
+    
+        h6 {
+            color: white;
+            font-size: calc(1.1rem);
+            font-weight: 400;
+        }
+    
+        h6:hover {
+            color: #595959;
+            transition: .3s ease-in-out;
+        }
+    
+        #date {
+            font-size: calc(.8rem);
+            color: rgb(7, 76, 141);
+        }
+    
+    
+        #imageText {
+            background-color: #fff;
+            height: 300px;
+            display: flex;
+            padding-left: 20px;
+            padding-right: 20px;
+            color: #595959;
+            font-weight: 300;
+            font-size: calc(.85rem);
+        }
+        
+        button {
+            background-color: rgb(255, 123, 0);
+            color: white;
+            border-radius: 0;
+            padding-top: 9px;
+            padding-bottom: 9px;
+            padding-left: 18px;
+            padding-right: 18px;
+        }
+    }
+        
+}

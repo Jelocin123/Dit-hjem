@@ -1,0 +1,126 @@
+#footerContainer{
+    background-color: #545c68;
+    margin-top: auto;
+    width: 100%;
+
+    #copyRightP {
+        color: white;
+        font-size: calc(.95rem);
+        font-weight: 300;
+
+        span {
+            color: #979ca2;
+        }
+    }
+
+    h6 {
+        color: white;
+        text-transform: uppercase;
+        font-weight: 300;
+    }
+
+    li {
+        list-style: none;
+        
+            a {
+                text-decoration: none;
+                color: #979ca2;
+
+                span {
+                    color: #fff;
+                }
+            }
+
+            a:hover {
+                transition: .5s ease-in-out;
+                color: #9cd2d2;
+
+            }
+
+    }
+
+    a {
+        text-decoration: none;
+        color: #979ca2;
+        text-align: center;
+        span {
+            color: #fff;
+        }
+
+
+        i {
+            font-size: calc(1.2rem);
+        }
+    }
+
+
+
+
+}
+
+@media only screen and (min-width: 650px) and (max-width: 850px) {
+    #footerContainer{
+        
+    
+    
+        #copyRightP {
+            color: white;
+            font-size: calc(.85rem);
+            font-weight: 300;
+    
+            span {
+                color: #979ca2;
+            }
+        }
+    
+        h6 {
+            color: white;
+            text-transform: uppercase;
+            font-weight: 300;
+            font-size: calc(.85rem);
+        }
+    
+        li {
+            list-style: none;
+            
+                a {
+                    text-decoration: none;
+                    color: #979ca2;
+                    font-size: .8rem;
+    
+                    span {
+                        color: #fff;
+                    }
+                }
+    
+                a:hover {
+                    transition: .5s ease-in-out;
+                    color: #9cd2d2;
+    
+                }
+    
+        }
+    
+        a {
+            text-decoration: none;
+            color: #979ca2;
+            text-align: center;
+            font-size: .8rem;
+
+            span {
+                color: #fff;
+            }
+    
+    
+            i {
+                font-size: calc(1rem);
+            }
+        }
+    
+    
+    
+    
+    }
+
+    
+}

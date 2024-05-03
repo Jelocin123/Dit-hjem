@@ -1,0 +1,120 @@
+#contactContainer {
+
+    background-color: #e3eaf0;
+    .bannerContainer {
+        position: relative;
+        
+        height: 95px; 
+    
+        
+    
+        #banner {
+            object-fit: cover;
+            object-position: top;
+            height: 100%;
+            width: 100%; 
+        }
+
+        .overlayText {
+            position: absolute;
+            top: 25%;
+            color: white;
+            font-size: calc(1.7rem);
+            font-weight: 300;
+            z-index: 1; 
+        }
+    }
+
+
+
+    #contactInner {
+
+       
+        background-color: #fff;
+
+
+        #addresse {
+            font-size: calc(1.1rem);
+
+        }
+
+        #zip {
+            font-size: calc(.9rem);
+
+        }
+
+
+        #information {
+            font-size: calc(1.2rem);
+    
+            
+        }
+
+        #hours {
+            font-size: calc(1.2rem);
+  
+            
+        }
+
+        p {
+            color: #48535f;
+            font-size: calc(.9rem);
+            
+        }
+
+
+        #icon {
+            width: calc(1.1rem);
+        }
+
+        #iconNone {
+            color: transparent;
+            width: calc(1.1rem);
+
+        }
+    }
+
+    #formContainer {
+        background-color: #48535f;
+
+        p {
+            font-size: calc(1.1rem);
+            color: white;
+        }
+    }
+
+    input {
+        border-radius: 0;
+       
+    }
+
+    input:focus {
+        background-color: #fff !important;
+    }
+
+    textarea {
+        border-radius: 0;
+    }
+
+
+    button {
+        background-color: #ff7500;
+        color: white;
+        border-radius: 0;
+    }
+
+    #loader {
+        height: 596px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+    }
+
+    .wrapper {
+        position: absolute;
+    }
+      
+
+}

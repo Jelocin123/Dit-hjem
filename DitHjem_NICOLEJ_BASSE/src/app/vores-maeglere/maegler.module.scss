@@ -1,0 +1,134 @@
+#maeglerContainer {
+
+    background-color: #e3eaf0;
+    .bannerContainer {
+        position: relative;
+        
+        height: 95px; 
+    
+        
+    
+        #banner {
+            object-fit: cover;
+            object-position: top;
+            height: 100%;
+            width: 100%; 
+        }
+
+        .overlayText {
+            position: absolute;
+            top: 25%;
+            color: white;
+            font-size: calc(1.7rem);
+            font-weight: 300;
+            z-index: 1; 
+        }
+    }
+
+
+    #peopleContainer {
+
+        background-color: #00cef5;
+        height: 396px;
+        margin-bottom: 100px !important;
+
+
+        img {
+            border-radius: 50%;
+            border: 2px solid #fff;
+        }
+
+
+        .nameP {
+            color: #fff;
+            font-size: calc(1.3rem);
+            font-weight: 400;
+        }
+
+        .nameP:hover {
+            transition: .4s ease-in-out;
+            color: #243c4c;
+            cursor: pointer;
+        }
+
+        .maeglerP {
+            font-size: calc(.9rem);
+            color: #0468ab;
+
+        }
+
+        i {
+            color: #0468ab;
+            
+
+        }
+
+
+        .phoneNumber {
+
+            color: #fff;
+            font-size: calc(.9rem);
+            font-weight: 400;
+            span {
+                font-weight: 300;
+            }
+
+            #phone {
+                color: #0468ab;
+
+                width: calc(1.1rem);
+            }
+        } 
+
+        .mobilNumber {
+
+            color: #fff;
+            font-size: calc(.9rem);
+            font-weight: 400;
+            span {
+                font-weight: 300;
+            }
+
+            #mobil {
+                color: #0468ab;
+                width: calc(1.1rem);
+            }
+        } 
+    }
+
+    #loader {
+        height: 596px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+    }
+
+    .wrapper {
+        position: absolute;
+    }
+
+@media only screen and (max-width: 600px) {
+
+    #peopleContainer {
+
+        background-color: #00cef5;
+        height: auto;
+        margin-bottom: 100px !important;
+    }
+
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1020px) {
+
+    #peopleContainer {
+
+        background-color: #00cef5;
+        height: auto;
+        margin-bottom: 100px !important;
+    }
+
+}
+
+}

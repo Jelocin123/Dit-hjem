@@ -1,0 +1,50 @@
+#modalContainer {
+    background-color: black;
+
+    button {
+
+        color: white !important;
+    
+    }
+
+    button:focus {
+       border: 1px solid rgba(0, 0, 255, 0);
+    }
+
+    h5 {
+        color: white;
+        font-weight: 400;
+        font-size: calc(.9rem);
+    }
+
+
+
+   #modalBody {
+    background-color: rgb(25, 25, 25) !important;
+   }
+
+
+   #next {
+    margin-right: 300px;
+   }
+
+   #prev {
+    margin-left: 300px;
+   }
+
+
+   //Manglede Media query på de 2 knapper til at skifte slide i galleri
+
+// @media only screen and (max-width: 600px) {
+
+//     #next {
+//         margin-right: 120px;
+//        }
+    
+//        #prev {
+//         margin-left: 120px;
+//        }
+
+// }
+
+}

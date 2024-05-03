@@ -1,0 +1,66 @@
+#searchContainer {
+    background-color: #c0dcee ;
+
+    
+
+button {
+    border-radius: 0;
+    background-color: #fff;
+    color: #48535f;
+    border: 0;
+    font-weight: 300;
+    text-align: left;
+}
+
+button:after {
+    content: ""; 
+    position: absolute;
+    bottom: 44%;
+    right: calc(1.5rem); 
+}
+
+ul{ 
+    border-radius: 0;
+    border: 0;
+
+    li {
+
+        a {
+            cursor: pointer;
+            color: #48535f;
+            font-weight: 300;
+        }
+
+    }
+
+}
+
+#searchBtn {
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#searchBtn:hover {
+    background-color: #00bded;
+}
+
+
+
+#dropdownHeight {
+max-height: calc(10rem);
+overflow-y: auto;
+max-width: 318px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    #dropdownHeight {
+        max-height: calc(9rem);
+        overflow-y: auto;
+        max-width: 100%;
+        }
+}
+}
+
