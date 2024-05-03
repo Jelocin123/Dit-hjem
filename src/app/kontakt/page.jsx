@@ -12,7 +12,7 @@ import SvgMail from '../components/svgComponents/SvgMail';
 import SvgClock from '../components/svgComponents/SvgClock';
 import Loader from '../components/Loader';
 import Navbar from '../components/navbar/Navbar';
-
+import Error from '../components/Error';
 const MapContainer = dynamic(() => import('react-leaflet').then(mod => mod.MapContainer), { ssr: false });
 const TileLayer = dynamic(() => import('react-leaflet').then(mod => mod.TileLayer), { ssr: false }); 
 

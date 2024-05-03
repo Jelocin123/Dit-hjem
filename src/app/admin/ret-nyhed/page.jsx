@@ -9,6 +9,7 @@ import { useUserContext } from '@/app/providers/userProvider';
 import { useRouter } from 'next/navigation';
 import Loader from "../../components/Loader"
 import Image from 'next/image';
+import Error from '@/app/components/Error';
 
 
 const Page = ({searchParams}) => {
